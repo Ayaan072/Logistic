@@ -7,7 +7,8 @@ import { StatusBadge, PriorityBadge } from '@/components/Badges';
 import StatusTracker from '@/components/StatusTracker';
 import EmptyState from '@/components/EmptyState';
 import { CardSkeleton, LoadingSpinner } from '@/components/Loading';
-import { formatDateTime, formatDate, getNextStatus } from '@/utils';
+import { formatDateTime, formatDate } from '@/utils';
+import { getNextStatus } from '@/types';
 import type { Order, OrderStatus } from '@/types';
 
 interface OperatorDashboardProps {
