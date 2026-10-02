@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { User, Mail, Phone, BadgeCheck, Calendar, Edit3, Save, X } from 'lucide-react';
+import { Mail, Phone, BadgeCheck, Calendar, Edit3, Save, X } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 import { useToast } from '@/hooks/useToast';
 import { updateProfile } from '@/services/api';

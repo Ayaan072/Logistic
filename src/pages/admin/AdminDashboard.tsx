@@ -1,9 +1,9 @@
 import { useEffect, useState, useMemo } from 'react';
-import { Package, Clock, Truck, CheckCircle2, Users, UserCheck, TrendingUp, ArrowRight, Plus, Search, Filter } from 'lucide-react';
+import { Package, Clock, Truck, CheckCircle2, Users, UserCheck, ArrowRight } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 import { useToast } from '@/hooks/useToast';
 import { fetchAllOrders, fetchOperators, assignOrder } from '@/services/api';
-import { StatusBadge, OperatorStatusBadge, PriorityBadge } from '@/components/Badges';
+import { StatusBadge, OperatorStatusBadge } from '@/components/Badges';
 import Modal from '@/components/Modal';
 import EmptyState from '@/components/EmptyState';
 import { CardSkeleton, TableSkeleton, LoadingSpinner } from '@/components/Loading';

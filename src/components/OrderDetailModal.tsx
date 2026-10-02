@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { User, Phone, MapPin, Package, Weight, Calendar, Flag, FileText, Truck, Clock, CheckCircle2 } from 'lucide-react';
+import { User, MapPin, Package, Calendar, Flag, FileText, Truck, Clock, CheckCircle2 } from 'lucide-react';
 import Modal from '@/components/Modal';
 import { StatusBadge, PriorityBadge } from '@/components/Badges';
 import StatusTracker from '@/components/StatusTracker';

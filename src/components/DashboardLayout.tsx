@@ -1,5 +1,5 @@
 import { useState, type ReactNode } from 'react';
-import { Truck, LayoutDashboard, Package, History, User, LogOut, Menu, X, Users, PlusCircle, ClipboardList } from 'lucide-react';
+import { Truck, LayoutDashboard, Package, History, User, LogOut, Menu, Users, PlusCircle, ClipboardList } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 import NotificationDropdown from '@/components/NotificationDropdown';
 import type { UserRole } from '@/types';

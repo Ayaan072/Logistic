@@ -1,12 +1,12 @@
 import { useEffect, useState, useMemo } from 'react';
-import { Search, Package, ArrowRight, Filter } from 'lucide-react';
+import { Search, ArrowRight, Filter } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 import { fetchOperatorOrders } from '@/services/api';
-import { StatusBadge, PriorityBadge } from '@/components/Badges';
+import { StatusBadge } from '@/components/Badges';
 import EmptyState from '@/components/EmptyState';
 import { TableSkeleton } from '@/components/Loading';
 import { formatDate } from '@/utils';
-import type { Order, OrderStatus } from '@/types';
+import type { Order } from '@/types';
 
 interface OperatorOrderHistoryProps {
   onViewOrder: (orderId: string) => void;

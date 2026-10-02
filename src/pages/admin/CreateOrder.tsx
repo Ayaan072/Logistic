@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { User, Phone, MapPin, Package, Weight, Flag, Calendar, FileText, Plus, AlertCircle } from 'lucide-react';
-import { useAuth } from '@/hooks/useAuth';
 import { useToast } from '@/hooks/useToast';
 import { createOrder, fetchOrderNumbers } from '@/services/api';
 import { LoadingSpinner } from '@/components/Loading';
@@ -12,7 +11,6 @@ interface CreateOrderProps {
 }
 
 export default function CreateOrder({ onNavigate }: CreateOrderProps) {
-  const { profile } = useAuth();
   const { toast } = useToast();
   const [form, setForm] = useState({
     customer_name: '',

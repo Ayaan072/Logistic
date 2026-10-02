@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Package, CheckCircle2, Truck, TrendingUp, ArrowRight, MapPin, User, Phone, Weight, Calendar, Flag, FileText, Clock } from 'lucide-react';
+import { Package, CheckCircle2, Truck, TrendingUp, ArrowRight, MapPin, User, Phone, Weight, Calendar, FileText } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 import { useToast } from '@/hooks/useToast';
 import { fetchOperatorActiveOrder, fetchOperatorOrders, advanceOrderStatus } from '@/services/api';
@@ -7,7 +7,7 @@ import { StatusBadge, PriorityBadge } from '@/components/Badges';
 import StatusTracker from '@/components/StatusTracker';
 import EmptyState from '@/components/EmptyState';
 import { CardSkeleton, LoadingSpinner } from '@/components/Loading';
-import { formatDateTime, formatDate } from '@/utils';
+import { formatDate } from '@/utils';
 import { getNextStatus } from '@/types';
 import type { Order, OrderStatus } from '@/types';
 

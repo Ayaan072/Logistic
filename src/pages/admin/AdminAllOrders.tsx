@@ -1,5 +1,5 @@
 import { useEffect, useState, useMemo } from 'react';
-import { Search, Filter, ArrowRight, Package, UserCircle } from 'lucide-react';
+import { Search, ArrowRight, Package } from 'lucide-react';
 import { useToast } from '@/hooks/useToast';
 import { useAuth } from '@/hooks/useAuth';
 import { fetchAllOrders, fetchOperators, assignOrder } from '@/services/api';
@@ -8,7 +8,7 @@ import Modal from '@/components/Modal';
 import EmptyState from '@/components/EmptyState';
 import { TableSkeleton, LoadingSpinner } from '@/components/Loading';
 import { formatDate } from '@/utils';
-import type { Order, Profile, OrderStatus } from '@/types';
+import type { Order, Profile } from '@/types';
 
 interface AdminAllOrdersProps {
   onViewOrder: (orderId: string) => void;
